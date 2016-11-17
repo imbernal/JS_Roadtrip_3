@@ -24,18 +24,4 @@ function theBridgeOfHoistingDoom() {
   return sword;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer:
-TypeError
+console.log("ERROR");

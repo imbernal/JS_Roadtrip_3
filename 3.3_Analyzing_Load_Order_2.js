@@ -25,58 +25,18 @@
 // Use the code below:
 
 function theBridgeOfHoistingDoom() {
-  function balrog() {
-    return "fire";
-  }
-  var ring;
-  function elf() {
-    return "pointy ears";
-  }
-  ring = wizard;
-  wizard = balrog;
-  return wizard();
-  function balrog() {
-    return "whip";
-  }
-  function wizard() {
-    return "white";
-  }
-  var power = ring();
-  return elf();
-  function elf() {
-    return "immortal";
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer:
-function theBridgeOfHoistingDoom() {
   var ring = undefined;
-  var ring = undefined;
-  var wizard = undefined;
   var power = undefined;
+  var wizard = undefined; 
 
   function balrog() {
     return "whip";
   }
+
   function wizard() {
     return "white";
   }
+
   function elf() {
     return "immortal";
   }
@@ -84,4 +44,5 @@ function theBridgeOfHoistingDoom() {
   ring = wizard;
   wizard = balrog;
   return wizard();
+
 }

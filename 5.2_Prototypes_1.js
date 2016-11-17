@@ -13,6 +13,7 @@ var canyonCows = [
   {name: "Sarah", type: "cow", hadCalf: "Esther"},
   {name: "Samson", type: "bull", hadCalf: null},
   {name: "Delilah", type: "cow", hadCalf: null}
+
 ];
 
 // The only problem is that the cowboy-devs don’t have time to go through all
@@ -37,7 +38,16 @@ var canyonCows = [
 // testing your code. You also do not need to include the canyonCows array in
 // your code submission.
 
+canyonCows.prototype.countCattle = function (kind){
+  var numKind = 0;
 
+  for(var i = 0 ; i < this.length ; i++){
+    if(this[i].type == kind )
+      numKind++;
+  }
+
+  return numKind;
+}
 
 
 

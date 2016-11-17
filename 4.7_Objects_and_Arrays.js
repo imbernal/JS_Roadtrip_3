@@ -35,43 +35,13 @@ var lighthousePointe = {
 
 // remove bulbs property from lighthousePointe
 
-
-// add weaponBulbs property to lighthousePointe
-
-
-// log the correct weaponBulbs array value to the console
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer:
-var superBlinders = [
-  ["Firelight", 4000],
-  ["Solar Death Ray", 6000],
-  ["Supernova", 12000]
-];
-
-var lighthousePointe = {
-  gateClosed: true,
-  bulbs: [200, 500, 750],
-  capacity: 30,
-  secretPassageTo: "Underwater Outpost"
-};
-
-// remove bulbs property from lighthousePointe
 delete lighthousePointe.bulbs;
-
 // add weaponBulbs property to lighthousePointe
-lighthousePointe.weaponBulbs = superBlinders;
 
+lighthousePointe.weaponBulbs = superBlinders;
 // log the correct weaponBulbs array value to the console
-console.log(lighthousePointe.weaponBulbs[2][0]);
+
+console.log(lighthousePointe.weaponBulbs);
+
+
+

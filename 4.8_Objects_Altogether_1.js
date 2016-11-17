@@ -38,53 +38,17 @@ var lighthousePointe = {
 
 function addRanger(location, name, skillz, station) {
   // increment the number of rangers property
-
-  // add the ranger<number> property and assign a ranger object
-
-}
-
-// call addRanger three times to add the new rangers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer example:
-var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
-
-var lighthousePointe = {
-  gateClosed: true,
-  weaponBulbs: superBlinders,
-  capacity: 30,
-  secretPassageTo: "Underwater Outpost",
-  numRangers: 0
-};
-
-function addRanger(location, name, skillz, station) {
-  // increment the number of rangers property
   location.numRangers++;
   // add the ranger<number> property and assign a ranger object
-  location["ranger" + location.numRangers] = {
+  location["numRangers" + location.numRangers] = {
     name: name,
     skillz: skillz,
     station: station
   };
-
 }
 
 // call addRanger three times to add the new rangers
+
 addRanger(lighthousePointe,"Nick Walsh", "magnification burn", 2);
 addRanger(lighthousePointe, "Drew Barontini", "uppercut launch", 3);
 addRanger(lighthousePointe, "Christine Wong", "bomb defusing", 1);

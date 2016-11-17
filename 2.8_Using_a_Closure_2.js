@@ -35,16 +35,5 @@ var snowYetiAlert      = warningMaker("snow yeti");
 
 
 
-
-
-
-
-
-
-
-
-
-
-// Answer:
-killerPenguinAlert(6, "Ice Caves");
-snowYetiAlert(1, "Blizzard Beach");
+killerPenguinAlert(6 , "Ice Caves");
+snowYetiAlert(1 , "Blizzard Beach");

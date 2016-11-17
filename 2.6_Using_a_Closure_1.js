@@ -18,30 +18,6 @@ function warningMaker(obstacle) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer:
-function warningMaker(obstacle) {
-  return function() {
-    alert("Beware! There have been " + obstacle + " sightings in the Cove today!");
-  };
-}
-
 var icebergAlert = warningMaker("iceberg");
 
 icebergAlert();
-
-// Output in the alert window:
-Beware! There have been iceberg sightings in the Cove today!

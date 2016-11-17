@@ -23,37 +23,11 @@
 // Note: Pay close attention to whitespace! You do not need to call the
 // warningMaker function.
 
-function warningMaker(obstacle) {
+function warningMaker(obstacle, numberObstacle , locationObstacle) {
   return function() {
     alert("Beware! There have been " + obstacle +
-          " sightings in the Cove today!\n" +
+          " sightings in the Cove today!\n" + numberObstacle + " have been spotted at the "+ locationObstacle+"!" 
 
-    );
-  };
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer example:
-function warningMaker(obstacle) {
-  return function(number, location) {
-    alert("Beware! There have been " + obstacle +
-          " sightings in the Cave today!\n" +
-          number + " have been spotted at the " +
-          location + "!"
     );
   };
 }

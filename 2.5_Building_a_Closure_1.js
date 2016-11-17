@@ -2,6 +2,10 @@
 
 function warningMaker(obstacle) {
 
+	return (obstacle)=>{
+		alert("Beware! There have been " + obstacle + " sightings in the Cave today!");
+	}
+
 }
 
 // The developers at the Closures Cave sometimes need to provide warnings to
@@ -19,24 +23,3 @@ function warningMaker(obstacle) {
 //
 // Note: You do not need to call the warningMaker function.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer:
-function warningMaker(obstacle) {
-  return function () {
-  	alert("Beware! There have been " + obstacle + " sightings in the Cave today!");
-  };
-}
