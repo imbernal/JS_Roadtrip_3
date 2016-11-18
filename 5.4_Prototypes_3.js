@@ -32,34 +32,18 @@ var forestCows = [
   {name: "Eowyn", type: "cow", hadCalf: "Legolas"}
 ];
 
+Object.prototype.noCalvesYet = function(){
+  
+  return this.type=="cow" && this.hadCalf == null?true : false;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer example:
-Object.prototype.noCalvesYet = function() {
-	return (this.type == "cow" && this.hadCalf === null);
-};
-
-Array.prototype.countForBreeding = function() {
-	var numToBreed = 0;
-
-  for(var i = 0, x = this.length; i < x; i++) {
-    if( this[i].noCalvesYet() ) numToBreed++;
+Array.prototype.countForBreding = function(){
+  var  numToBreed=0;
+  
+  for( var i = 0; i < this.length ; i++ ){
+    if (this[i].noCalvesYet())
+      numToBreed++;
   }
-
+  
   return numToBreed;
-};
+}

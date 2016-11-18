@@ -25,21 +25,8 @@ Math.sqrt(49);        // 7
 Math.sqrt(45 + 55);   // 10
 Math.sqrt(30 / 6);    // 2.23606797749979
 
+Fencepost.prototype.valueOf = function(){
 
+	return Math.sqrt( Math.pow(this.x,2) + Math.pow(this.y,2) );
 
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer example:
-Fencepost.prototype.valueOf = function() {
-	return Math.sqrt( this.x * this.x + this.y * this.y );
-};
+}

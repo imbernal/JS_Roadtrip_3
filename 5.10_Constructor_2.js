@@ -26,37 +26,23 @@ postNum: 20
 //  2. If two posts both have odd-numbered x coordinates, they should be connected.
 
 
+function Fencepost(x,y,postNum){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer:
-function Fencepost(x, y, postNum) {
   this.x = x;
   this.y = y;
-  this.postNum = postNum;
+  this.postNum;
   this.connectionsTo = [];
-  this.sendRopeTo = function(connectedPost) {
+  this.sendRopeTo = function(connectedPost){
     this.connectionsTo.push(connectedPost);
   };
+
 }
 
-var post18 = new Fencepost(-3, 4, 18);
-var post19 = new Fencepost(5, -1, 19);
-var post20 = new Fencepost(-2, 10, 20);
+var fancePost18 = new Fancepost(-3,4,18);
+var fancePost19 = new Fancepost(5,-1,19);
+var fancePost20= new Fancepost(-2,10,20);
 
-post18.sendRopeTo(post20);
-post20.sendRopeTo(post18);
-post18.sendRopeTo(post19);
-post19.sendRopeTo(post18);
+fancePost18.sendRopeTo(fancePost20);
+fancePost20.sendRopeTo(fancePost18);
+fancePost18.sendRopeTo(fancePost19);
+fancePost19.sendRopeTo(fancePost18);

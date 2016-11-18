@@ -38,31 +38,17 @@ var genericPost = {
 //     connectionsTo array.
 //
 // Use the code above in your solution
+function Fencepost(x,y,postNum){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Answer:
-function Fencepost(x, y, postNum) {
-	this.x = x;
+  this.x = x;
   this.y = y;
-  this.postNum = postNum;
+  this.postNum;
   this.connectionsTo = [];
-  this.sendRopeTo = function(connectedPost) {
-  	this.connectionsTo.push(connectedPost);
+  this.sendRopeTo = function(connectedPost){
+    this.connectionsTo.push(connectedPost);
   };
+
 }
+
+
+
